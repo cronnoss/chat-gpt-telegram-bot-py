@@ -26,3 +26,4 @@ def handle_text(message):
     bot.send_message(message.chat.id, response.choices[0].text)
 
 bot.polling()
+
