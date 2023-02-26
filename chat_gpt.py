@@ -7,8 +7,8 @@ import telebot
 import openai
 import os
 
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-API_KEY = os.getenv('API_KEY')
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+API_KEY = os.environ.get('API_KEY')
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 openai.api_key = API_KEY
